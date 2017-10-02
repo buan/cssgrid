@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    #main div:nth-child(odd)
+        {
+            background: #825;
+            padding:20px;
+            
+        }
+        
+            #main div:nth-child(even)
+        {
+            background: #777;
+            padding:20px;
+        }
+        #main
+        {
+            text-align: center;
+            color: white;
+            max-width: 960px;
+            margin: 0 auto;
+            display:grid;
+            grid-template-columns:repeat(3,1fr);
+            /*grid-auto-rows: 200px;*/
+            grid-auto-rows: minmax(200px,auto);
+
+        }
+      
+    
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div>1</div>
+        <div>2</div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi tempora aliquam officiis, ipsa, voluptatum error reiciendis. Dolorum molestias adipisci autem ab dignissimos inventore porro laudantium laboriosam esse, rem blanditiis beatae hic illo distinctio dolore quae omnis voluptate quasi! Harum tenetur animi dolores in, laborum doloremque necessitatibus cumque fuga, fugiat ipsum rerum optio quo quisquam officia modi corporis, accusantium praesentium laboriosam! Ullam quas ea amet quia in distinctio consectetur cum omnis, accusantium magnam, sequi repellat ut qui quos.</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        
+    </div>
+</body>
+</html>
