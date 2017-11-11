@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    #main div:nth-child(odd)
+        {
+            background: #825;
+            padding:20px;
+            
+        }
+        
+            #main div:nth-child(even)
+        {
+            background: #777;
+            padding:20px;
+        }
+        #main
+        {
+          text-align: center;
+          color:#fff;
+          display: grid;
+          grid-template-columns: repeat(3,1fr);
+          grid-template-rows: repeat(4,minmax(150px,auto));
+          grid-gap: 10px;
+        }
+      
+        .five
+        {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 10px;
+        }
+        .five div
+        {
+        border: 1px solid white;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div class="four">4</div>
+        <div class="five">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        </div>
+        <div class="six">6</div>
+
+        
+    </div>
+</body>
+</html>
